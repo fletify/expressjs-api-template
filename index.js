@@ -32,6 +32,7 @@ app.use((req, res, next) => {
 
 require('./get/router')(app);
 require('./post/router')(app);
+require('./routes/router')(app);
 
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {console.log(`[^] Web Server Launched: http://localhost:${PORT}`)});
